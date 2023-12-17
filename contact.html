@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact C2P Ventures for business opportunities, services, and more. Fill out our contact form or schedule a meeting through Calendly."
+    />
+    <meta
+      name="keywords"
+      content="C2P Ventures, contact us, business opportunities, services, Calendly meeting"
+    />
+    <meta name="author" content="Your Name or Company Name" />
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta
+      property="og:title"
+      content="Contact C2P Ventures | Connect with Us for Opportunities"
+    />
+    <meta
+      property="og:description"
+      content="Contact C2P Ventures for business opportunities, services, and more. Fill out our contact form or schedule a meeting through Calendly."
+    />
+    <meta property="og:image" content="URL_TO_AN_IMAGE" />
+    <meta property="og:url" content="URL_TO_YOUR_PAGE" />
+
+    <!-- Twitter Meta Tags (for Twitter Card) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Contact C2P Ventures | Connect with Us for Opportunities"
+    />
+    <meta
+      name="twitter:description"
+      content="Contact C2P Ventures for business opportunities, services, and more. Fill out our contact form or schedule a meeting through Calendly."
+    />
+    <meta name="twitter:image" content="URL_TO_AN_IMAGE" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Contact C2P Ventures | Connect with Us for Opportunities</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "poppins", sans-serif;
+      }
+
+      .contact-form {
+        position: relative;
+        min-height: auto;
+        z-index: 0;
+        background: #001d3d;
+        justify-content: center;
+        display: grid;
+        align-items: center;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin-top: 0 auto;
+      }
+
+      .contact-form h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #fff;
+        font-family: "poppins";
+      }
+
+      .contact-form h2 {
+        line-height: 40px;
+        margin-bottom: 5px;
+        font-size: 30px;
+        font-weight: 500;
+        color: #69275c;
+        text-align: center;
+      }
+
+      .contact-form .main {
+        position: relative;
+        display: flex;
+        margin: 30px 0;
+        margin-top: 0;
+      }
+
+      .content {
+        flex-basis: 50%;
+        margin-top: 3rem;
+        padding: 3em 3em;
+        background: #fff;
+        box-shadow: 2px 9px 49px -17px rgba(156, 39, 148, 0.1);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+
+      .form-img {
+        flex-basis: 50%;
+        background: #f0f4f8;
+        background-size: cover;
+        margin-top: 3rem;
+        padding: 40px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        align-items: center;
+        display: grid;
+      }
+
+      .form-img img {
+        max-width: 100%;
+      }
+
+      .btn2,
+      button,
+      input {
+        border-radius: 35px;
+      }
+
+      .btn2:hover,
+      button:hover {
+        color: #97359c;
+        transition: 0.5s ease;
+      }
+
+      .contact-form form {
+        margin: 30px 0;
+      }
+
+      .contact-form input,
+      textarea {
+        outline: none;
+        margin-bottom: 15px;
+        font-stretch: 16px;
+        color: #999;
+        padding: 14px 20px;
+        width: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        border: none;
+        background: #fcfcfc;
+        transition: 0.3s ease;
+      }
+
+      textarea:focus {
+        background: transparent;
+        border: 1px solid #69275c;
+        border-radius: 15px;
+      }
+
+      .contact-form input:focus {
+        background: transparent;
+        border: 1px solid #69275c;
+      }
+
+      .contact-form button {
+        font-size: 18px;
+        color: #001d3d;
+        width: 100%;
+        background: #ffc300;
+        font-weight: 600;
+        transition: 0.3s ease;
+        padding: 14px 15px;
+        border: 1px solid #69275c;
+      }
+
+      @media (max-width: 736px) {
+        .contact-form .main {
+          background-color: rzzz;
+          margin: 30px 0;
+
+          flex-direction: column-reverse;
+        }
+
+        .contact-form form {
+          margin-top: 30px;
+          margin-bottom: 1rem;
+        }
+
+        .form-img {
+          border-radius: 0;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+          order: 2;
+        }
+
+        .content {
+          order: 1;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+      }
+
+      /* --------------------------------- */
+
+      .logoimg {
+        filter: invert(100%);
+        filter: brightness(500%);
+      }
+
+      .btn {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+      }
+
+      .mainn {
+        display: flex;
+        padding: 0 30px;
+        background-color: #001d3d;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      @media (max-width: 736px) {
+        .logoimg {
+          width: 30%;
+          background-color: transparent;
+        }
+
+        .btn {
+          display: flex;
+          align-items: center;
+          white-space: nowrap;
+          padding: 10px 18px;
+        }
+      }
+
+      /* footer */
+
+      .mainn-footer {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        padding: 0 30px;
+        background-color: #000814;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .footer-list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .footer-list li {
+        margin: 0 10px;
+        color: #ffc300;
+        text-transform: capitalize;
+      }
+
+      .social-list li a {
+        color: #f0f4f8;
+        font-size: 3rem;
+      }
+
+      @media (max-width: 736px) {
+        .contact-form {
+          padding: 10px;
+        }
+
+        .mainn-footer {
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+          overflow: hidden;
+        }
+
+        .footer-list li {
+          font-size: 1rem;
+          margin-bottom: 2rem;
+        }
+
+        .social-list {
+          margin-bottom: 0.5rem;
+          display: flex;
+        }
+        .cal{
+          font-size: 1em;
+        }
+      }
+
+      .cal {
+        display: flex;
+        padding-top: 20px;
+        align-items: center;
+        background-color: #001d3d;
+        justify-content: center;
+        white-space: nowrap;
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="mainn">
+        <img
+          class="logoimg"
+          src="./images/reallogo.png"
+          width="10%"
+          style="transform: scale(2.5); margin-left: 20px"
+          alt=""
+        />
+        <div class="home-btn">
+          <a href="./index.html" class="btn">
+            <ion-icon
+              name="chevron-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
+            <span>GO back</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="cal" style="font-size: 1em;">
+      Book a meeting with us on &nbsp;
+      <a href="https://calendly.com/c2pven/15min" target="_blankb">
+        <b style="color: #ffc300; text-decoration: underline"> Calendly</b>
+      </a>
+    </div>
+    <p style="background-color: #001d3d; text-align: center; padding-top: 2rem">
+      OR
+    </p>
+    <div class="contact-form">
+      <div class="container">
+        <div class="main">
+          <div class="content">
+            <h2>Contact Us</h2>
+            <form action="https://script.google.com/macros/s/AKfycbxQNS61WQJuM1vPw63Xs4INCaZEKa3oM8I0HLz-mOkVbx2OEie87-zqUGPdF0dH6IMljg/exec" method="post">
+              <input type="text" name="name" placeholder="Enter Your Name" />
+
+              <input type="email" name="name" placeholder="Enter Your Email" />
+              <textarea name="message" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn2">
+                Send <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+          <div class="form-img">
+            <img src="./images/contactus.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer  -->
+    <footer>
+      <div class="mainn-footer">
+        <img
+          class="logoimg"
+          src="./images/reallogo.png"
+          width="10%"
+          style="transform: scale(2.5); margin-left: 20px"
+          alt=""
+        />
+        <div class="home-btn">
+          <ul class="footer-list">
+            <li><a href="./index.html" style="color: inherit">home</a></li>
+            <li><a href="./index.html" style="color: inherit">about</a></li>
+            <li><a href="./index.html" style="color: inherit">services</a></li>
+            <li>
+              <a href="./opportunity.html" style="color: inherit"
+                >opportunity</a
+              >
+            </li>
+          </ul>
+        </div>
+        <ul class="social-list">
+          <li>
+            <a href="https://join.skype.com/invite/vnhUJbPQpPfj" target="_blank" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://t.me/c2pven" target="_blank">
+              <img src="./images/tg3.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="https://discordapp.com/users/c2pventures_78897" target="_blank" class="social-link">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

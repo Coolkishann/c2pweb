@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers at SR INFOTECH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-RE8pV+B23rJKa3I/ktepMv5FV+6f9/qPhdMJ/jij81fm2Wnt1k6jcVpKXJd8BoSkuPbAJRUIn5eP1CpPq92Mjg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/sweetalert2@10"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    ul,
+    li,
+    form {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: url(./images/wave2.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #000;
+        background-color: #fff;
+    }
+
+    .root {
+        --fs-3: 3.2rem;
+        --st-patricks-blue: hsl(236, 57%, 28%);
+
+    }
+
+    .section-title {
+        color: var(--st-patricks-blue);
+        font-size: var(--fs-3);
+        margin-block-end: 60px;
+        max-width: max-content;
+        margin-inline: auto;
+    }
+
+    .underline {
+        position: relative;
+    }
+
+    .underline::before {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        height: 6px;
+        background-image: var(--gradient-2);
+        border-radius: 10px;
+    }
+
+
+
+
+
+    .intro {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* 000814 */
+    /* 003566 */
+    /* 003566 */
+    /* ffc300    */
+
+    .svg-img {
+        width: 50%;
+        /* height: 40%; */
+    }
+
+    .intro-content .header-content .s-title {
+        color: #000;
+        font-weight: bold;
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .intro-content {
+        max-width: 50%;
+        margin: 2rem 2rem;
+        padding: 50px;
+        color: #66686b;
+        /* font-weight: 600; */
+        /* font-size: 17px; */
+        /* background-color:#0a182e; */
+        /* border-radius: 2rem; */
+        /* box-shadow: 0 2px 4px rgba(244, 241, 241, 0.803); */
+
+    }
+
+
+    .job-listings {
+        max-width: 50%;
+        margin: 20px auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .job-category {
+        margin-bottom: 30px;
+    }
+
+    .job-category h3 {
+        font-size: 1.5em;
+    }
+
+
+
+    .featured-opportunities {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .opportunity {
+        text-align: center;
+        background-color: #001d3d;
+        color: white;
+        width: 80%;
+        padding: 20px 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .application-form {
+        max-width: 30%;
+        margin: 20px auto;
+        color: #000;
+        background-color: #fff;
+        border: 2px solid #001d3d;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 12px 12px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .application-form input {
+        border-radius: 10px;
+        border-color: #001d3d;
+    }
+
+    input:focus {
+        border-color: #001d3d;
+
+    }
+
+    /* Style the label for role selection */
+    label {
+        font-size: 16px;
+        margin-bottom: 8px;
+        display: block;
+
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+
+
+
+    input,
+    button {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+
+    button a {
+        color: #fff;
+    }
+
+    button {
+        background-color: #001d3d;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 200px;
+        transition: background-color 0.3s;
+        border: 2px solid #001d3d;
+    }
+
+    button:active {
+        transform: scale(0.99);
+        box-shadow: 1px 1px 2px grey;
+    }
+
+
+
+    .mainn-footer {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        background-color: #000814;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    .footer-list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer-list li {
+        margin: 0 10px;
+        color: #ffc300;
+        text-transform: capitalize;
+    }
+
+    .social-list li a {
+        color: #f0f4f8;
+        font-size: 3rem;
+    }
+
+
+
+    .jobs {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 736px) {
+        .svg-img {
+            display: none;
+        }
+
+        body {
+            background-size: 600%;
+        }
+
+        .svg-img img {
+            width: 100% !important;
+        }
+
+        .team1 {
+            font-size: 3rem;
+            color: white;
+        }
+
+        .team1::before {
+            content: '';
+            width: 80%;
+        }
+
+        .intro-content p {
+            color: #fff;
+        }
+
+        .intro-content {
+            max-width: 100%;
+            /* Adjusted for mobile layout */
+            margin: .1rem;
+            /* Adjusted for mobile layout */
+        }
+
+        .s-title {
+            font-size: 3rem !important;
+        }
+
+        .job-listings {
+            max-width: 100%;
+            padding: 2rem;
+            /* Adjusted for mobile layout */
+        }
+
+        .opportunity {
+            padding: 10px;
+            /* Adjusted padding for smaller screens */
+        }
+
+        .application-form {
+            max-width: 100%;
+        }
+
+        .contact-form {
+            padding: 10px;
+            /* Adjusted padding for smaller screens */
+        }
+
+        .mainn-footer {
+            flex-direction: column;
+            /* Adjusted for mobile layout */
+            padding: 1rem;
+        }
+
+        .footer-list li {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            /* Adjusted margin for smaller screens */
+        }
+
+        .social-list {
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: center;
+            /* Adjusted for mobile layout */
+        }
+
+        #developer-form {
+            display: none;
+        }
+
+        .jobs {
+            flex-direction: column;
+            /* Adjusted for mobile layout */
+            max-width: 100%;
+            /* Adjusted for mobile layout */
+            margin: 0 auto;
+        }
+    }
+    .h-p{
+        color: black;
+    }
+</style>
+
+
+<body>
+    <section class="intro">
+        <div class="intro-content">
+            <div class="header-content">
+                <h1 class="h2 section-title underline team1">Join Our Team</h1>
+                <h2 class="s-title">Hurry Up! Exciting Opportunities are waiting.</h2>
+            </div>
+            <p class="h-p">At C2p ventures, <br> we believe in the power of collaboration and the strength of our diverse community.
+                We
+                welcome individuals with a passion for innovation and a drive for excellence to join us on our journey
+                of transforming ideas into reality. Whether you're an aspiring agent or a skilled developer, there's a
+                place for you here to thrive and make an impact.</p>
+        </div>
+        <div class="svg-img">
+            <img src="./images/opportunity.svg" alt="">
+        </div>
+    </section>
+    <center>
+        <h2 class="h2 section-title underline">Job Listing</h2>
+    </center>
+
+    <!-- Featured Opportunities -->
+    <section class="featured-opportunities">
+        <!-- <h1>Featured Opportunities</h1> -->
+        <div class="opportunity">
+            <h3> ✨ Software Engineer (Full Stack) <i class="fas fa-star"></i></h3>
+            <p>Brief description of the role, qualifications, and responsibilities.</p>
+        </div>
+
+    </section>
+    <div class="jobs">
+        <section class="job-listings">
+            <div class="job-category">
+                <h3><i class="fas fa-user-tie"></i> Join as an Agent</h3>
+                <p>Are you a motivated individual looking to embark on a dynamic career path in the tech industry? At SR
+                    INFOTECH, we offer an exciting opportunity for you to join our team as an agent. As an agent, you'll
+                    play a crucial role in connecting our cutting-edge solutions with businesses seeking to enhance
+                    their
+                    online presence.</p>
+                <button onclick="updateFormHeading('agent')"><a href="#agent-form" class="apply-button">Apply
+                        Now</a></button>
+            </div>
+            <div class="job-category">
+                <h3><i class="fas fa-code"></i> Join as a Developer</h3>
+                <p>Are you a tech-savvy individual with a passion for coding and a creative flair for design? SR
+                    INFOTECH is
+                    your platform to shine as a developer. Join our team of over 50+ highly skilled professionals and
+                    contribute to the creation of cutting-edge web and mobile applications.</p>
+                <button onclick="updateFormHeading('Developer')"> <a href="#developer-form" class="apply-button">Apply
+                        Now</a></button>
+            </div>
+        </section>
+        <!-- Application Form -->
+        <section class="application-form">
+            <form id="application-form" action="#" method="post">
+                <h2 id="form-heading">Join as an Agent</h2>
+
+                <label for="name">Your Name:</label>
+                <input type="text" placeholder="Enter your name here " id="name" name="Name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" placeholder="Enter your email here " name="Email" required>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+
+
+                <label for="role"
+                    style="font-family: 'Arial', sans-serif; font-size: 16px; color: #333; margin-bottom: 8px; display: block;">Select
+                    Your Role:</label>
+                <select id="role" name="role" required
+                    style="padding: 8px; width:100%;border: 1px solid #ccc; border-radius: 4px; font-family: 'Arial', sans-serif; font-size: 14px;margin-bottom: 8px; color: #555;">
+                    <option value="agent">Agent</option>
+                    <option value="developer">Developer</option>
+                </select>
+                <button type="submit" id="submit">Submit Application</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+        <div class="mainn-footer">
+            <img class="logoimg" src="./images/reallogo.png" width="10%"
+                style="transform: scale(2.5);margin-left: 20px;" alt="">
+            <div class="home-btn">
+                <ul class="footer-list">
+                    <li><a href="./index.html" style="color: inherit;">home</a></li>
+                    <li><a href="./index.html" style="color: inherit;">about</a></li>
+                    <li><a href="./index.html" style="color: inherit;">services</a></li>
+                    <li><a href="./contact.html" style="color: inherit;">contact</a></li>
+                </ul>
+            </div>
+            <ul class="social-list">
+              <li>
+                <a href="https://join.skype.com/invite/vnhUJbPQpPfj" target="_blank" class="social-link">
+                  <ion-icon name="logo-skype"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="https://t.me/c2pven" target="_blank">
+                  <img src="./images/tg3.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="https://discordapp.com/users/c2pventures_78897" target="_blank" class="social-link">
+                  <ion-icon name="logo-discord"></ion-icon>
+                </a>
+              </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+
+        const name = document.getElementById('name')
+        document.getElementById('role').addEventListener('change', function () {
+            const selectedRole = this.value;
+            document.getElementById('form-heading').innerHTML = `Join as a ${selectedRole === 'agent' ? 'Agent' : 'Developer'}`;
+        });
+
+        function updateFormHeading(role) {
+            name.focus()
+            document.getElementById('form-heading').innerHTML = `Join as a ${role === 'agent' ? 'Agent' : 'Developer'}`;
+        }
+
+
+
+
+        document.getElementById('application-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const resume = document.getElementById('resume');
+            const role = document.getElementById('role').value;
+            const base64 = await fileToBase64(resume);
+
+            const formData = {
+                name: name,
+                email: email,
+                resume: base64,
+                role: role
+            };
+
+
+            submit.innerHTML = "Submitting..."
+            Email.send({
+                SecureToken: "1a02a852-b593-48f0-afa5-60fd570d7a9e",
+                To: `kishanv1464@gmail.com`,
+                From: "kishanv1464@gmail.com",
+                Subject: `${role === 'agent' ? 'Agent' : 'Developer'} is exploring Opportunity at C2PVentures`,
+                Body: `
+                <div style="font-family: Arial, sans-serif; background-color: #f2f2f2; padding: 20px;">
+    <h1 style="color: #333;">Hello There,</h1>
+    <p style="color: #666;">A new user has filled out the opportunity form. Here are the details:</p>
+    <ul>
+        <li><strong>Name:</strong>${name}</li>
+        <li><strong>Email:</strong>${email}</li>
+        <li><strong>Role:</strong>${role}</li>
+        <li><strong>Additional Information:</strong>User has attached his/her Resume below :)</li>
+    </ul>
+    <p style="color: #666;">If you have any questions or need further assistance, please don't hesitate to contact this user. We look forward to the possibility of working together!</p>
+    <p style="color: #666;">Best regards,</p>
+    <p style="color: #666;"> Team C2P ventures</p>
+</div>
+
+        `,
+
+
+                Attachments: [
+                    {
+                        name: `Resume.pdf`,
+                        data: base64
+                    }
+                ]
+            }).then(
+                message => {
+                    if (message === 'OK') {
+                        submit.innerHTML = "Submit Application"
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Your mail has been sent. ',
+                            timer: 2000,
+                            showConfirmButton: false,
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'There is an error sending the message. ',
+                            timer: 2000,
+                            showConfirmButton: false,
+                        });
+                        console.error(message);
+                    }
+                }
+            );
+        });
+
+        function fileToBase64(fileInput) {
+            return new Promise((resolve, reject) => {
+                const file = fileInput.files[0];
+
+                if (!file) {
+                    reject(new Error("No file selected"));
+                    alert("Please select one file!");
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = error => reject(error);
+            });
+        }
+
+    </script>
+
+    
+
+
+
+</body>
+
+</html>
